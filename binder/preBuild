@@ -1,0 +1,5 @@
+wget https://www.mathworks.com/mpm/glnxa64/mpm 
+chmod +x mpm
+./mpm install --release=R2023a --destination=/home/<username>/matlab --products MATLAB 
+wget https://raw.githubusercontent.com/mathworks-ref-arch/container-images/main/matlab-deps/r2023a/ubuntu22.04/base-dependencies.txt
+cat base-dependencies.txt | xargs sudo apt install -y
