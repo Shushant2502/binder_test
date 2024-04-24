@@ -1,4 +1,3 @@
 wget https://www.mathworks.com/mpm/glnxa64/mpm 
 chmod +x mpm
 ./mpm install --release=R2023a --destination="$(pwd)"/"matlab" --products MATLAB 
-echo "export PATH=$PATH:"$(pwd)"/"matlab/bin" MWI_LOG_FILE="$(pwd)"/"log.txt"" >> .bashrc
